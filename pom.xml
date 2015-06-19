@@ -10,6 +10,7 @@
     <version>1.0</version>
     <modules>
         <module>PalindromeVerifier</module>
+        <module>IfTwoAreTarget</module>
     </modules>
 
     <dependencies>
