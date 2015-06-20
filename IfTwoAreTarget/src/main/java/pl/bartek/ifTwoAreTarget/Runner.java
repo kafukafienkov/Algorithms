@@ -6,14 +6,13 @@ package pl.bartek.ifTwoAreTarget;
 class Runner {
     public static void main(String[] args) {
 
-        int target = 77;
-        int[] numbers = {1, 10, 3, 10, 12, 48, 74, 11, 15, 18, 99, 0};
+        int target = 0;
+        int[] numbers = {-3, 4, 3, 90};
 
         SumCheck sumCheck = new SumCheck();
         int[] twoSumIndices = sumCheck.twoSum(numbers, target);
         System.out.println("First number's index is: " + twoSumIndices[0]
-                + " and Second number's index is: " + twoSumIndices[1]);
-
+                + ", and Second number's index is: " + twoSumIndices[1]);
 
     }
 }
