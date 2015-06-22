@@ -12,6 +12,7 @@
         <module>PalindromeVerifier</module>
         <module>IfTwoAreTarget</module>
         <module>Anagrams</module>
+        <module>DuplicatesChecker</module>
     </modules>
 
     <dependencies>
