@@ -1,5 +1,7 @@
 package pl.bartek.duplicatesCheck;
 
+import java.util.Arrays;
+
 /**
  * author: Bartek
  */
@@ -7,18 +9,23 @@ public class DuplicatesChecker {
 
     public boolean containsDuplicate(int[] nums) {
 
-        int counter = 0;
-        int indicesToCheck = nums.length - 1;
+        if (nums == null || nums.length == 0)
+            return false;
 
+        int currentNumber;
+        int indicesToCheck = nums.length;
+
+        Arrays.sort(nums);
         for (int i = 0; i < indicesToCheck; i++) {
-            int currentNumber = nums[i];
-            for (int j = indicesToCheck; j > i; j--) {
-                if (currentNumber == nums[j])
-                    counter++;
-                if (counter >= 1)
-                    return true;
-            }
+            currentNumber = nums[i];
+            if (i + 1 >= indicesToCheck)
+                return false;
+            if (currentNumber == nums[i + 1])
+                return true;
         }
+
         return false;
     }
 }
+
+
