@@ -13,6 +13,7 @@
         <module>IfTwoAreTarget</module>
         <module>Anagrams</module>
         <module>DuplicatesChecker</module>
+        <module>MajorityElement</module>
     </modules>
 
     <dependencies>
